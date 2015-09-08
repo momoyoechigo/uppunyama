@@ -1,0 +1,39 @@
+<div class="wrapper">
+	<div id="content">
+		<div class="mountain-top">
+        	<div id="navi">
+        		<ul>
+                    <li>お問い合わせ</li>
+            		<li>うっぷん山について</li>
+            	</ul>
+        	</div>
+            <h1><img src="<%= asset_path "uppun-logo.gif" %>" class="uppun-logo" alt="うっぷん山"></h1>
+            <div class="cloud1">
+            	<img src="<%= asset_path "cloud.gif" %>">
+            </div>
+            <div class="cloud2">
+            	<img src="<%= asset_path "cloud2.gif" %>">
+            </div>
+            <div class="cloud3">
+            	<img src="<%= asset_path "cloud3.gif" %>">
+            </div>
+            <div class="mount-comment">
+                <div class="balloon">うっぷん送信で、標高が高くなるよ！あなたのうっぷん山は<br />現在　標高128m</div>
+            </div>
+            <div class="mount-level1">
+            	<div style="background-image:url(<%= asset_path('mount-level1.gif') %>) no-repeat bottom;"></div>
+            </div>
+        </div>
+        <div class="base-area ac mb50">
+        	<div class="mountain-under"></div>
+            <div class="text-area">
+                <div class="kusa">
+                    <img src="<%= asset_path "kusa.gif" %>">
+                    <%#= f.text_field :body %>
+                </div>
+        		</div>
+                <%#= f.submit %><p class="uppun_btn">うっぷん送信</p>
+			</div>
+        <div id="footer" class="ac"> © 2015 momoyo-e</div>
+	</div>
+</div>

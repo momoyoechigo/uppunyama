@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: "hg42u3kgg"
+  api_key: '758887723425239'
+  api_secret: "UxaKkFcFkxGFOPQieQ4tBw6fHpY"
+  enhance_image_tag: true
+  static_image_support: false
+production:
+  cloud_name: "hg42u3kgg"
+  api_key: '758887723425239'
+  api_secret: "UxaKkFcFkxGFOPQieQ4tBw6fHpY"
+  enhance_image_tag: true
+  static_image_support: true
+test:
+  cloud_name: "hg42u3kgg"
+  api_key: '758887723425239'
+  api_secret: "UxaKkFcFkxGFOPQieQ4tBw6fHpY"
+  enhance_image_tag: true
+  static_image_support: false

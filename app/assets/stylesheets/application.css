@@ -113,8 +113,77 @@ img {
 	bottom:0;
 }
 
+.mount-level2 {
+	width:980px;
+	height:136px;
+	background-image:url(mount-level2.gif);
+	background-repeat:no-repeat;
+	background-position:bottom;
+	position : absolute ;
+	bottom:0;
+}
+
+.mount-level3 {
+	width:980px;
+	height:151px;
+	background-image:url(mount-level3.gif);
+	background-repeat:no-repeat;
+	background-position:bottom;
+	position : absolute ;
+	bottom:0;
+}
+
+.mount-level4 {
+	width:980px;
+	height:181px;
+	background-image:url(mount-level4.gif);
+	background-repeat:no-repeat;
+	background-position:bottom;
+	position : absolute ;
+	bottom:0;
+}
+
+.mount-level5 {
+	width:980px;
+	height:237px;
+	background-image:url(mount-level5.gif);
+	background-repeat:no-repeat;
+	background-position:bottom;
+	position : absolute ;
+	bottom:0;
+}
+
+.mount-level6 {
+	width:980px;
+	height:272px;
+	background-image:url(mount-level6.gif);
+	background-repeat:no-repeat;
+	background-position:bottom;
+	position : absolute ;
+	bottom:0;
+}
+
+.mount-level7 {
+	width:980px;
+	height:351px;
+	background-image:url(mount-level7.gif);
+	background-repeat:no-repeat;
+	background-position:bottom;
+	position : absolute ;
+	bottom:0;
+}
+
+.mount-level8 {
+	width:980px;
+	height:413px;
+	background-image:url(mount-level8.gif);
+	background-repeat:no-repeat;
+	background-position:bottom;
+	position : absolute ;
+	bottom:0;
+}
+
 .kusa {
-	position: relative;
 	top: 190px;
 	left: -350px;
 }
@@ -185,6 +254,7 @@ img {
 	margin:5px auto 20px auto;
 	background-color:#FFFFFF;
 	border-radius:6px;
+	display:block;
 }
 
 /* 送るボタン */
@@ -204,6 +274,7 @@ img {
   padding: 10px 20px 10px 20px;
   display:inline-block;
   text-decoration: none;
+  cursor:pointer;
 }
 
 .uppun_btn:hover {

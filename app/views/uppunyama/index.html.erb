@@ -4,7 +4,7 @@
         	<div id="navi">
         		<ul>
                     <li>お問い合わせ</li>
-            		<li>うっぷん山について</li>
+            		<li><%= link_to "うっぷん山について", about_path %></li>
             	</ul>
         	</div>
             <h1><img src="<%= asset_path "uppun-logo.gif" %>" class="uppun-logo" alt="うっぷん山"></h1>
@@ -17,23 +17,27 @@
             <div class="cloud3">
             	<img src="<%= asset_path "cloud3.gif" %>">
             </div>
-            <div class="mount-comment">
-                <div class="balloon">うっぷん送信で、標高が高くなるよ！あなたのうっぷん山は<br />現在　標高128m</div>
-            </div>
-            <div class="mount-level1">
-            	<div style="background-image:url(<%= asset_path('mount-level1.gif') %>) no-repeat bottom;"></div>
-            </div>
+            <%# if @hyoukou == 128 %>
+                <%= render hyoukou %>
+            <div class="mount-level1"></div>
+            <%# elsif @hyoukou > 150 %>
+            <%# elsif @hyoukou > 180 %>
+            <%# elsif @hyoukou > 220 %>
+            <%# elsif @hyoukou > 250 %>
+            <%# end %>
         </div>
-        <div class="base-area ac mb50">
-        	<div class="mountain-under"></div>
-            <div class="text-area">
-                <div class="kusa">
-                    <img src="<%= asset_path "kusa.gif" %>">
-                    <%#= f.text_field :body %>
-                </div>
-        		</div>
-                <%#= f.submit %><p class="uppun_btn">うっぷん送信</p>
-			</div>
+            <div class="base-area ac mb50">
+        	<div class="mountain-under">
+        	</div>
+                <%= form_for(@user) do |f| %>
+                    <%= f.label :body %>
+                    <%= f.text_area :body, class: "text-area" %>
+                <!--<div class="kusa">
+                    <img src="<%#= asset_path "kusa.gif" %>">
+                </div>-->
+                    <%= f.submit "うっぷん送信", class: "uppun_btn" %>
+                <% end %>
+		    </div>
         <div id="footer" class="ac"> © 2015 momoyo-e</div>
 	</div>
 </div>
